@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag & Drop To-Do List</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Drag & Drop</h1>
+    <main class="row">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Enter new task</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Add-task name" data-name="todo-input" />
+        <div class="input-group-append">
+          <button class="btn btn-success" data-name="add-btn">Add</button>
+        </div>
+      </div>
+    
+      <div class="col-4">
+        <h3>Open</h3>
+        <ul class="list-group" data-name="todos-list">
+        </ul>
+      </div>
+    
+      <div class="col-4">
+        <h3>In Progress</h3>
+        <ul class="list-group" data-name="in-progress-list"></ul>
+      </div>
+    
+      <div class="col-4">
+        <h3>Completed</h3>
+        <ul class="list-group" data-name="completed-list"></ul>
+      </div>
+    </main>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
+
